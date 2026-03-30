@@ -1,5 +1,5 @@
 <h1 align="center">
-Doc2Opt
+💡Doc2Opt
 </h1>
 <h2 align="center">
 An Effective and Efficient System for Document-Grounded Automatic Optimization Modeling
@@ -12,9 +12,9 @@ An Effective and Efficient System for Document-Grounded Automatic Optimization M
 
 The **Doc2Opt Framework** , which highlights three key designs discussed in the following.
 
-### 1. Cross-modal retrieval-augmented modeling
+### 🗂️ 1. Cross-modal retrieval-augmented modeling
 The cross-modal retrieval module serves as a semantic filter toretain only relevant document pages for different modeling tasks. The retrieved images of pages and the task description are then fed into a VLM to generate the optimization model as discussed below.
-### 2. Five-element representation
+### 🚀2. Five-element representation
 
 Instead of directly generating the
 mathematical model, we adopt a more concise and structured five-element formulation as:
@@ -24,7 +24,7 @@ mathematical model, we adopt a more concise and structured five-element formulat
 - 📊 **Parameters**
 - 📏 **Constraints**
 
-### 3. Autonomous Refinement
+### 🔄3. Autonomous Refinement
 
 Inspired bythe LLM-as-a-judge approach, we use another VLM as an evaluator to assess the quality of the model produced by the generator.
 
