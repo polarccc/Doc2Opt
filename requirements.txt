@@ -1,0 +1,10 @@
+torch
+transformers
+accelerate
+datasets
+sentence-transformers
+colpali_engine
+numpy
+pandas
+tqdm
+streamlit
