@@ -6,7 +6,10 @@ An Effective and Efficient System for Document-Grounded Automatic Optimization M
 </h2>
 
 ## ✨ Overview
-![Doc2Opt Framework](image\README\framework.png "Doc2Opt Framework")
+<p align="center">
+<img src="image\README\framework.png" width="600"/>
+</p>
+
 The **Doc2Opt Framework** , which highlights three key designs discussed in the following.
 
 ### 1. Cross-modal retrieval-augmented modeling
