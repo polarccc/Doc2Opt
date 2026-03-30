@@ -7,7 +7,7 @@ An Effective and Efficient System for Document-Grounded Automatic Optimization M
 
 ## ✨ Overview
 <p align="center">
-<img src="image\README\framework.png" width="600"/>
+<img src="image\README\framework.png" width="800"/>
 </p>
 
 The **Doc2Opt Framework** , which highlights three key designs discussed in the following.
