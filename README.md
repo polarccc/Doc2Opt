@@ -31,7 +31,8 @@ and interpretable. Also, it allows an easy refinement of the model by
 correcting the inappropriate terms based on the explanation.
 ### 🔄3. Autonomous Refinement
 
-To achieve more robust and adaptive modeling to improve accuracy, we design a simple yet effective mechanism to automatically evaluate and refine the constructed model.
+To achieve more robust and adaptive modeling to improve accuracy, we design a simple yet effective mechanism to automatically *evaluate and refine* the constructed model.
+
 Inspired bythe *LLM-as-a-judge* approach, we use another VLM as an evaluator to assess the quality of the model produced by the generator. The evaluator is instructed to analyze the five-element
 representation and explanation to determine whether the model is required to be refined.
 
