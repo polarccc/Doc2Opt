@@ -13,20 +13,27 @@ An Effective and Efficient System for Document-Grounded Automatic Optimization M
 The **Doc2Opt Framework** , which highlights three key designs discussed in the following.
 
 ### 🗂️ 1. Cross-modal retrieval-augmented modeling
-The cross-modal retrieval module serves as a semantic filter toretain only relevant document pages for different modeling tasks. The retrieved images of pages and the task description are then fed into a VLM to generate the optimization model as discussed below.
+The *cross-modal retrieval* module serves as a semantic filter toretain only relevant document pages for different modeling tasks. The retrieved images of pages and the task description are then fed into a VLM to generate the optimization model as discussed below.
 ### 🚀2. Five-element representation
 
 Instead of directly generating the
-mathematical model, we adopt a more concise and structured five-element formulation as:
+mathematical model, we adopt a more concise and structured *five-element formulation* as an intermediate representation to improve the reliability and interpretability of the modeling.
 - 🎯 **Objective**
 - 🔢 **Decision Variables**
 - 📦 **Sets**
 - 📊 **Parameters**
 - 📏 **Constraints**
 
+Moreover, we instruct the generator to explain the *references* for the construction of each item in *five-element formulation*, from which content
+of the NL description or document pages a specific attribute or
+constraint is derived, which makes the modeling process tracable
+and interpretable. Also, it allows an easy refinement of the model by
+correcting the inappropriate terms based on the explanation.
 ### 🔄3. Autonomous Refinement
 
-Inspired bythe LLM-as-a-judge approach, we use another VLM as an evaluator to assess the quality of the model produced by the generator.
+To achieve more robust and adaptive modeling to improve accuracy, we design a simple yet effective mechanism to automatically evaluate and refine the constructed model.
+Inspired bythe *LLM-as-a-judge* approach, we use another VLM as an evaluator to assess the quality of the model produced by the generator. The evaluator is instructed to analyze the five-element
+representation and explanation to determine whether the model is required to be refined.
 
 
 ---
